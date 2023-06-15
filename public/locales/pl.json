@@ -1,0 +1,86 @@
+{
+  "navigation": {
+    "heading": "wszpila.dev",
+    "links": [
+      {
+        "name": "O mnie",
+        "url": "/about"
+      },
+      {
+        "name": "Projekty",
+        "url": "/projects"
+      },
+      {
+        "name": "Kontakt",
+        "url": "/contact"
+      }
+    ]
+  },
+  "mainContent": {
+    "heading": "Cześć!",
+    "paragraphs": [
+      { "text": "Nazywam się Wojciech Szpila i jestem programistą." },
+      {
+        "text": "Z chęcią zrobię dla Ciebie stronę internetową lub aplikację mobilną."
+      },
+      {
+        "text": "Jeżeli chciałbyś zobaczyć mój stack technologiczny i dowiedzieć się więcej o mnie, kliknij ",
+        "button": { "href": "about", "text": "przycisk" }
+      },
+      {
+        "text": "Zachęcam też do zobaczenia moich projektów ",
+        "button": { "href": "projects", "text": "o tutaj" }
+      },
+      {
+        "text": "Jeżeli masz pytanie lub chciałbyś się ze mną skontaktować, kliknij",
+        "button": { "href": "contact", "text": "guziczek" }
+      }
+    ]
+  },
+  "about": {
+    "heading": "Coś o mnie",
+    "paragraphs": [
+      "W czerwcu 2021 postanowiłem spróbować \"czegoś\" w IT. Zacząłem od kursów na udemy z HTMLa i CSSa.",
+      "Od razu zacząłem łapać bakcyla i wiedziałem, że chcę się tym zajmować.",
+      "Po 10 miesiącach od początku nauki, w maju 2022, dostałem swoją pierwszą pracę jako programista!",
+      "Przez ten czas przeszedłem wiele kursów, a wiedzę z nich wykorzystałem zarówno w pracy, jak i w swoich projektach.",
+      "Po dzisiejszy dzień uczę się nowych rzeczy i rozwijam swoje umiejętności, co sprawia mi niesamowitą frajdę!"
+    ],
+    "stack": {
+      "heading": "Technologie, których używam",
+      "blocks": [
+        {
+          "heading": "W pracy:",
+          "list": [
+            "Javascript",
+            "HTML",
+            "CSS",
+            "PHP",
+            "MySQL",
+            "Google Analytics 4",
+            "IMA SDK"
+          ]
+        },
+        {
+          "heading": "Do swoich projektów:",
+          "list": [
+            "React",
+            "NextJS 13",
+            "SASS/SCSS",
+            "PostgreSQL",
+            "Prisma",
+            "NodeJS/Express",
+            "REST API",
+            "GraphQL",
+            "TypeScript",
+            "MongoDB",
+            "Mongoose",
+            "Socket.io",
+            "Github",
+            "TailwindCSS"
+          ]
+        }
+      ]
+    }
+  }
+}

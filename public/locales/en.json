@@ -1,0 +1,86 @@
+{
+  "navigation": {
+    "heading": "wszpila.dev",
+    "links": [
+      {
+        "name": "About",
+        "url": "/about"
+      },
+      {
+        "name": "Projects",
+        "url": "/projects"
+      },
+      {
+        "name": "Contact",
+        "url": "/contact"
+      }
+    ]
+  },
+  "mainContent": {
+    "heading": "Hi!",
+    "paragraphs": [
+      { "text": "My name is Wojciech Szpila and I'm a web developer." },
+      {
+        "text": "I will be happy to create a website or a mobile application for you."
+      },
+      {
+        "text": "If you would like to see my tech stack and learn more about me, click ",
+        "button": { "href": "about", "text": "the button" }
+      },
+      {
+        "text": "I also encourage you to check out my projects ",
+        "button": { "href": "projects", "text": "out here" }
+      },
+      {
+        "text": "If you have any questions or would like to get in touch, click ",
+        "button": { "href": "contact", "text": "here" }
+      }
+    ]
+  },
+  "about": {
+    "heading": "Something about me",
+    "paragraphs": [
+      "In June 2021 I decided to try \"something\" in IT. I started with HTML and CSS courses on udemy.",
+      "I immediately started to like it and knew that I wanted to do it.",
+      "10 months after the start of learning, in May 2022, I got my first job as a programmer!",
+      "During this time I went through many courses, and the knowledge from them I used both at work and in my projects.",
+      "To this day I learn new things and develop my skills, which gives me incredible joy!"
+    ],
+    "stack": {
+      "heading": "Technologies I use",
+      "blocks": [
+        {
+          "heading": "At work:",
+          "list": [
+            "Javascript",
+            "HTML",
+            "CSS",
+            "PHP",
+            "MySQL",
+            "Google Analytics 4",
+            "IMA SDK"
+          ]
+        },
+        {
+          "heading": "For my projects:",
+          "list": [
+            "React",
+            "NextJS 13",
+            "SASS/SCSS",
+            "PostgreSQL",
+            "Prisma",
+            "NodeJS/Express",
+            "REST API",
+            "GraphQL",
+            "TypeScript",
+            "MongoDB",
+            "Mongoose",
+            "Socket.io",
+            "Github",
+            "TailwindCSS"
+          ]
+        }
+      ]
+    }
+  }
+}
