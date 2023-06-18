@@ -1,6 +1,6 @@
-import { TECHNOLOGIES } from "@/lib/contents"
-import MotionHeading from "../common/MotionHeading"
-import MotionBox from "../common/MotionBox"
+import { TECHNOLOGIES } from "@/lib/contents";
+import MotionHeading from "../common/MotionHeading";
+import MotionList from "../common/MotionList";
 
 export default function Technologies() {
   return (
@@ -15,15 +15,15 @@ export default function Technologies() {
               ? "Znam bardzo dobrze"
               : proficience === "quite_good"
               ? "Znam całkiem dobrze"
-              : "W planach do nauki"
+              : "W planach do nauki";
           return (
-            <MotionBox
+            <MotionList
               key={proficience}
               content={{ title: h2Title, text: technologyArray }}
             />
-          )
+          );
         })}
       </div>
     </div>
-  )
+  );
 }

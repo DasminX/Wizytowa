@@ -1,19 +1,19 @@
-"use client"
+"use client";
 
-import { useLocalStorage } from "@/custom-hooks/use-localstorage"
-import { themes } from "@/lib/themes"
-import { useEffect } from "react"
+import { useLocalStorage } from "@/custom-hooks/use-localstorage";
+import { themes } from "@/lib/themes";
+import { useEffect } from "react";
 
 export default function ChangeThemeButton() {
-  const [theme, setTheme] = useLocalStorage("theme")
+  const [theme, setTheme] = useLocalStorage("theme");
 
   useEffect(() => {
-    Object.entries(themes[theme === "light" ? "light" : "dark"]).forEach(
+    Object.entries(themes[theme === "dark" ? "dark" : "light"]).forEach(
       ([cssKey, cssValue]) => {
-        document.documentElement.style.setProperty(cssKey, cssValue)
+        document.documentElement.style.setProperty(cssKey, cssValue);
       }
-    )
-  }, [theme])
+    );
+  }, [theme]);
 
   return (
     <button
@@ -23,5 +23,5 @@ export default function ChangeThemeButton() {
     >
       {theme === "dark" ? "☀️" : "🌑"}
     </button>
-  )
+  );
 }

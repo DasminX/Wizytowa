@@ -6,20 +6,20 @@
 
 :root {
   /* Dark mode */
-  --main-bg: #0e141b;
-  --primary-color: #eee6e6;
-  --secondary-color: #705df2;
-  --active-link: #4799fc;
-  --thumb-color: #5a58a0;
-  --track-color: #1f2d37;
+  // --main-bg: #0e141b;
+  // --primary-color: #eee6e6;
+  // --secondary-color: #705df2;
+  // --active-link: #4799fc;
+  // --thumb-color: #5a58a0;
+  // --track-color: #1f2d37;
 
   /* Light mode */
-  // --main-bg: #c6e4df;
-  // --primary-color: #35524a;
-  // --active-link: #1eb66c;
-  // --secondary-color: #8da72f;
-  // --thumb-color: #80b1c4;
-  //--track-color: #627c85;
+  --main-bg: #c6e4df;
+  --primary-color: #35524a;
+  --active-link: #1eb66c;
+  --secondary-color: #8da72f;
+  --thumb-color: #80b1c4;
+  --track-color: #627c85;
 }
 
 * {
@@ -348,6 +348,26 @@ strong {
   }
   100% {
     transform: scale(1);
+  }
+}
+
+/* Projects */
+/* Projects */
+/* Projects */
+
+.projects-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-gap: 1rem;
+
+  .project {
+    padding: 1rem;
+    border-radius: 2rem;
+    border: 2px solid var(--secondary-color);
+
+    h3 {
+      text-align: center;
+    }
   }
 }
 

@@ -12,3 +12,11 @@ export interface MotionAnimateVariantProps {
 export interface MotionButtonProps extends MotionAnimateVariantProps {
   onClick?: () => void;
 }
+
+export type ProjectType = {
+  name: string;
+  description: string;
+  stack: string[];
+  github: string;
+  live?: string;
+};

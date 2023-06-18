@@ -23,7 +23,11 @@ const aboutMeVariants = {
 
 const colorizeTextByEqualSign = (text: string) => {
   return text.split("=").map((chunk, idx) => {
-    return idx % 2 === 0 ? chunk : <strong>{chunk}</strong>;
+    return idx % 2 === 0 ? (
+      chunk
+    ) : (
+      <strong key={idx * Math.floor(Math.random() * 100)}>{chunk}</strong>
+    );
   });
 };
 

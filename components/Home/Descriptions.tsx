@@ -1,12 +1,12 @@
-import { DESCRIPTIONS_CONTENT } from "@/lib/contents"
-import MotionBox from "../common/MotionBox"
+import { DESCRIPTIONS_CONTENT } from "@/lib/contents";
+import MotionList from "../common/MotionList";
 
 export default function Descriptions() {
   return (
     <section className="descriptions">
       {DESCRIPTIONS_CONTENT.map((content, idx) => (
-        <MotionBox key={idx} content={content} />
+        <MotionList key={idx} content={content} />
       ))}
     </section>
-  )
+  );
 }

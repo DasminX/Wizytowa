@@ -1,11 +1,11 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
+import { motion } from "framer-motion";
 
-export default function MotionBox({
+export default function MotionList({
   content,
 }: {
-  content: { title: string; text: string[] }
+  content: { title: string; text: string[] };
 }) {
   return (
     <motion.div
@@ -21,5 +21,5 @@ export default function MotionBox({
         ))}
       </div>
     </motion.div>
-  )
+  );
 }
