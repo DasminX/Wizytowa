@@ -17,7 +17,6 @@ export default function MailForm() {
     ) {
       return;
     }
-    console.log("przechodzi");
     const req = await fetch("/api/mail", {
       method: "POST",
       headers: {

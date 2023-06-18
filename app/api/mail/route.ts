@@ -5,11 +5,6 @@ sendgrid.setApiKey(process.env.SENDGRID_API_KEY as string);
 
 export async function POST(req: NextRequest) {
   try {
-    return NextResponse.json(
-      { message: "success", status: "okk" },
-      { status: 200 }
-    );
-
     const res = await req.json();
     await sendgrid.send({
       from: "wojciech.szpila.dev@gmail.com",
