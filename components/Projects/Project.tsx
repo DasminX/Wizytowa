@@ -1,5 +1,8 @@
 import Link from "next/link";
 import type { ProjectType } from "../../lib/types";
+import TextGenerator from "./TextGenerator";
+import ListGenerator from "./ListGenerator";
+import ProjectLinks from "./ProjectLinks";
 
 export default function Project({
   projectDetails,
@@ -9,19 +12,12 @@ export default function Project({
   return (
     <div className="project">
       <h3>{projectDetails.name}</h3>
-      <p>{projectDetails.description}</p>
-      <ul>
-        {projectDetails.stack.map((tech: string) => (
-          <li key={tech}>{tech}</li>
-        ))}
-      </ul>
-      <Link href={projectDetails.github}>{projectDetails.github}</Link>
-      {projectDetails.live && (
-        <>
-          <br></br>
-          <Link href={projectDetails.live}>{projectDetails.live}</Link>
-        </>
-      )}
+      <TextGenerator text={projectDetails.description} />
+      <ListGenerator list={projectDetails.stack} />
+      <ProjectLinks
+        gh={projectDetails.github ?? ""}
+        live={projectDetails.live || ""}
+      />
     </div>
   );
 }
