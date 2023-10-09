@@ -1,0 +1,122 @@
+/* Globals and customs */
+
+:root {
+  /* Dark mode */
+  // --main-bg: #0e141b;
+  // --primary-color: #eee6e6;
+  // --secondary-color: #705df2;
+  // --active-link: #4799fc;
+  // --thumb-color: #5a58a0;
+  // --track-color: #1f2d37;
+
+  /* Light mode */
+  --main-bg: #c6e4df;
+  --primary-color: #35524a;
+  --active-link: #1eb66c;
+  --secondary-color: #8da72f;
+  --thumb-color: #80b1c4;
+  --track-color: #627c85;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+::selection {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+::-webkit-scrollbar {
+  width: 0.625rem;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--track-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--thumb-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary-color);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--main-bg);
+  color: var(--primary-color);
+  height: auto;
+  width: 100%;
+}
+
+h1 {
+  font-size: 2.2rem;
+  @extend .heading-styles;
+}
+
+h2 {
+  font-size: 1.8rem;
+  @extend .heading-styles;
+}
+
+h3 {
+  font-size: 1.6rem;
+  @extend .heading-styles;
+}
+
+.heading-styles {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--secondary-color);
+  font-weight: 700;
+}
+
+.transite-colors {
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-timing-function: cubic-bezier(1, 0.33, 0.56, 0.96);
+  transition-duration: 250ms;
+}
+
+.icon-scroll {
+  position: relative;
+  width: 2.5rem;
+  height: 4rem;
+  box-shadow: inset 0 0 0 0.1rem var(--primary-color);
+  border-radius: 1.5rem;
+
+  &::before {
+    position: absolute;
+    left: 50%;
+    content: "";
+    width: 0.5rem;
+    height: 0.5rem;
+    background: var(--primary-color);
+    margin-left: -0.25rem;
+    top: 0.5rem;
+    border-radius: 0.25rem;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-name: scroll;
+  }
+}
+
+@keyframes scroll {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(2.5rem);
+  }
+}
+
+strong {
+  color: var(--secondary-color);
+}
